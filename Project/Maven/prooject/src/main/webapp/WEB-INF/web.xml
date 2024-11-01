@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Damai Resort Web Application</display-name>
+
+    <!-- Define the servlet -->
+    <servlet>
+        <servlet-name>BackServlet</servlet-name> <!-- Name for the servlet -->
+        <servlet-class>com.prooject.servlet.Back</servlet-class> <!-- Full class name of your servlet -->
+    </servlet>
+
+    <!-- Map the servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>BackServlet</servlet-name> <!-- This should match the servlet name above -->
+        <url-pattern>/back</url-pattern> <!-- URL pattern to match -->
+    </servlet-mapping>
+
+</web-app>
